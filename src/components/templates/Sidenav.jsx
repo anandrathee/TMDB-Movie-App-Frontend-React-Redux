@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Sidenav = () => {
 
-  return <div className='w-[20%] h-full border-r-2 border-zinc-400 p-8'>
+  return <div className='w-[20%] h-full border-r-2 border-zinc-400 p-8 overflow-y-hidden'>
 
     <h1 className='text-2xl text-white font-bold'>        
         <i className="ri-tv-fill text-[#6556cd] mr-3"></i>
@@ -38,7 +38,7 @@ const Sidenav = () => {
 
     <nav className='flex  flex-col text-zinc-400 text-lg gap-2'>
 
-    <h1 className='text-white font-semibold text-xl mt-5 mb-5 '>
+    <h1 className='text-white font-semibold text-xl mt-2 mb-2 '>
         Website Information       
     </h1>
 
