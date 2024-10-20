@@ -14,12 +14,12 @@ const Home = () => {
 
   const [trending, settrending] = useState(null);
 
-  const [category, setcategory] = useState("all");
+  const [category, setcategory] = useState("movie");
 
   const GetHeaderWallpaper = async () => {
     try {
-      const { data } = await axios.get(`/trending/all/day`);
-      // console.log(data)
+      const { data } = await axios.get(`/trending/movie/day`);
+      console.log(data)
       let randomData =
         data.results[Math.floor(Math.random() * data.results.length)];
       setwallpaper(randomData);
